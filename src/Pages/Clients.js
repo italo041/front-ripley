@@ -35,7 +35,7 @@ export const Clients = () => {
   return (
     <div className="container my-3">
       <div className="d-flex justify-content-between">
-        <div className="fs-1">Clients</div>
+      <h1>Clients</h1>
         <AverageAges clients={clients} />
       </div>
       <ClientCreate setClients={setClients} />
