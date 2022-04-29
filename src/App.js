@@ -4,8 +4,9 @@ import { Navbar } from "./components/Navbar";
 import { Clients } from "./Pages/Clients";
 import { Home } from "./Pages/Home";
 
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import NotFound from "./Pages/NotFound";
 
 toast.configure();
 export const App = () => {
@@ -14,8 +15,9 @@ export const App = () => {
       <Navbar />
       <ToastContainer />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/clients" element={<Clients />} />
+        <Route path="*" element={<NotFound />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/clients" element={<Clients />} />
       </Routes>
     </div>
   );
