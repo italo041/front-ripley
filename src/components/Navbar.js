@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{ minHeight: "5vh" }}>
+    <nav
+      className="navbar navbar-expand-lg navbar-light bg-light"
+      style={{ minHeight: "5vh" }}
+    >
       <div className="container-fluid">
         <a className="navbar-brand">
           <Link to="/">Home</Link>
@@ -22,8 +25,15 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page">
+              <a className="nav-link" aria-current="page">
                 <Link to="/clients">Clients</Link>
+              </a>
+            </li>
+          </ul>
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link" aria-current="page">
+                <Link to="/stadistics">Stadistics</Link>
               </a>
             </li>
           </ul>
