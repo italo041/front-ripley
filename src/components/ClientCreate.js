@@ -35,15 +35,14 @@ export const ClientCreate = ({ setClients }) => {
           },
           ...prevState,
         ]);
-      })
 
+        setFirstName("");
+        setLastName("");
+        setBirthday("");
+      })
       .catch((error) => {
         console.error("Error:", error);
       });
-
-    setFirstName("");
-    setLastName("");
-    setBirthday("");
   };
 
   return (
