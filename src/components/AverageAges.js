@@ -21,9 +21,9 @@ export const AverageAges = ({ clients }) => {
 
   return (
     <div className="card border-success mb-3" style={{ maxWidth: "18rem" }}>
-      <div className="card-header">Average Ages</div>
+      <div className="card-header">Average Age</div>
       <div className="card-body text-success">
-        <h5 className="card-title">Average Age is: {averageAges} </h5>
+        <h5 className="card-title">The average age is: {averageAges} years </h5>
       </div>
     </div>
   );

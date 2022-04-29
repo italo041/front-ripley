@@ -25,7 +25,7 @@ export const Stadistics = () => {
       <h1>Stadistics</h1>
       <div className="card" style={{ maxWidth: "300px" }}>
         <div className="card-body">
-          <h5 class="card-title text-center">Ages ranges</h5>
+          <h5 class="card-title text-center">Age range</h5>
           <DoughnutChart agesRanges={agesRanges} />
         </div>
       </div>
