@@ -16,9 +16,8 @@ export const Clients = () => {
         `${process.env.REACT_APP_DOMAIN}/clients?limit=${limit}&offset=${offset}`
       );
       const clients = await resp.json();
-      console.log(clients.length);
-      setPageCount(Math.ceil((clients.length + 1) / limit));
-      setClients(clients);
+      setPageCount(Math.ceil(clients.count / limit));
+      setClients(clients.data);
     } catch (error) {
       console.log(error);
     }
